@@ -1,0 +1,347 @@
+{
+  "format": "wmix_shared_bundle_v1",
+  "exportedAt": "2026-04-13T03:52:52.657Z",
+  "sourceBackup": "2026-04-13T02:25:30.445Z",
+  "suppliers": [
+    {
+      "id": "1775528870380h9ew",
+      "name": "颂爱食品(苏州)有限公司",
+      "type": "product",
+      "contact": "赵伟（厂长）/雷姐（生产）",
+      "phone": ""
+    },
+    {
+      "id": "1775533036711dqma",
+      "name": "金麦乐(上海)食品科技有限公司",
+      "type": "product",
+      "contact": "JJ（老板）/Tora（厂长）",
+      "phone": ""
+    },
+    {
+      "id": "17755357905551v82",
+      "name": "浙江维京生物科技有限公司",
+      "type": "product",
+      "contact": "王凯",
+      "phone": ""
+    },
+    {
+      "id": "1775535905422reee",
+      "name": "东莞市寮步顺兴纸品印刷厂（普通合伙）",
+      "type": "material",
+      "contact": "Steven",
+      "phone": ""
+    }
+  ],
+  "products": [
+    {
+      "id": "1775536548305lrmc",
+      "code": "0000001",
+      "name": "WMIX x PROVA香草巴斯克",
+      "spec": "盒",
+      "supplierId": "1775533036711dqma",
+      "unit": "个"
+    },
+    {
+      "id": "1775536593139wj4l",
+      "code": "0000002",
+      "name": "WMIX开心果香草双层巴斯克",
+      "spec": "盒",
+      "supplierId": "1775533036711dqma",
+      "unit": "个"
+    },
+    {
+      "id": "17755366241722ec8",
+      "code": "0000003",
+      "name": "WMIX巧克力香草双层巴斯克",
+      "spec": "盒",
+      "supplierId": "1775533036711dqma",
+      "unit": "个"
+    },
+    {
+      "id": "17755366616063y4e",
+      "code": "0000005",
+      "name": "WMIX抹茶香草双层巴斯克",
+      "spec": "盒",
+      "supplierId": "1775533036711dqma",
+      "unit": "个"
+    },
+    {
+      "id": "17755367249893vg3",
+      "code": "0000006",
+      "name": "WMIX无蔗糖香草巴斯克",
+      "spec": "盒",
+      "supplierId": "1775533036711dqma",
+      "unit": "个"
+    },
+    {
+      "id": "1775556902179011c",
+      "code": "01050443",
+      "name": "缤纷白脱曲奇（草莓+抹茶+柚子）",
+      "spec": "400g",
+      "supplierId": "1775528870380h9ew",
+      "unit": "盒"
+    },
+    {
+      "id": "1775557006958zuhy",
+      "code": "01050327",
+      "name": "草莓奶酪白脱曲奇",
+      "spec": "400g",
+      "supplierId": "1775528870380h9ew",
+      "unit": "盒"
+    },
+    {
+      "id": "1775557116257919y",
+      "code": "01050326",
+      "name": "干邑提子白脱曲奇",
+      "spec": "400g",
+      "supplierId": "1775528870380h9ew",
+      "unit": "盒"
+    },
+    {
+      "id": "17756130568622a3x",
+      "code": "01050407",
+      "name": "抹茶豆乳白脱曲奇",
+      "spec": "400g",
+      "supplierId": "1775528870380h9ew",
+      "unit": "盒"
+    },
+    {
+      "id": "1775613173346cvm4",
+      "code": "01050390",
+      "name": "柚子榛巧白脱曲奇",
+      "spec": "400g",
+      "supplierId": "1775528870380h9ew",
+      "unit": "盒"
+    },
+    {
+      "id": "1775613275885azvk",
+      "code": "01050422",
+      "name": "蝴蝶酥",
+      "spec": "225g",
+      "supplierId": "1775528870380h9ew",
+      "unit": "盒"
+    },
+    {
+      "id": "17756133867238jky",
+      "code": "01050444",
+      "name": "榴莲白脱曲奇",
+      "spec": "400g",
+      "supplierId": "1775528870380h9ew",
+      "unit": "盒"
+    },
+    {
+      "id": "1775613555958h2rq",
+      "code": "01050371",
+      "name": "布列塔尼酥饼（原味）",
+      "spec": "315g",
+      "supplierId": "1775528870380h9ew",
+      "unit": "盒"
+    },
+    {
+      "id": "1775613726385bek6",
+      "code": "01050451",
+      "name": "多口味布列塔尼酥饼礼盒",
+      "spec": "260g",
+      "supplierId": "1775528870380h9ew",
+      "unit": "盒"
+    },
+    {
+      "id": "1775613868736nfpg",
+      "code": "GDL01705",
+      "name": "雪茄蛋卷-芝士味",
+      "spec": "126g（9g*14）",
+      "supplierId": "17755357905551v82",
+      "unit": "盒"
+    },
+    {
+      "id": "1775613958142ycrn",
+      "code": "GDL01953",
+      "name": "雪茄蛋卷-海盐巧克力味",
+      "spec": "126g（9g*14）",
+      "supplierId": "17755357905551v82",
+      "unit": "盒"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1775614176799wulu",
+      "date": "2026-03-31",
+      "supplierId": "1775528870380h9ew",
+      "note": "",
+      "createdAt": "2026-04-08T02:09:36.800Z",
+      "items": [
+        {
+          "productId": "1775613275885azvk",
+          "qty": 120,
+          "deliveryDate": "2026-04-03",
+          "note": ""
+        },
+        {
+          "productId": "1775556902179011c",
+          "qty": 1000,
+          "deliveryDate": "2026-04-03",
+          "note": ""
+        },
+        {
+          "productId": "1775557006958zuhy",
+          "qty": 300,
+          "deliveryDate": "2026-04-03",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "17756143402591q15",
+      "date": "2026-03-31",
+      "supplierId": "17755357905551v82",
+      "note": "",
+      "createdAt": "2026-04-08T02:12:20.259Z",
+      "items": [
+        {
+          "productId": "1775613868736nfpg",
+          "qty": 1500,
+          "deliveryDate": "2026-04-12",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "1775701687965i3jf",
+      "date": "2026-04-08",
+      "supplierId": "1775533036711dqma",
+      "note": "",
+      "createdAt": "2026-04-09T02:28:07.967Z",
+      "items": [
+        {
+          "productId": "1775536548305lrmc",
+          "qty": 600,
+          "deliveryDate": "2026-04-12",
+          "note": ""
+        },
+        {
+          "productId": "17755366241722ec8",
+          "qty": 300,
+          "deliveryDate": "2026-04-12",
+          "note": ""
+        },
+        {
+          "productId": "17755366616063y4e",
+          "qty": 300,
+          "deliveryDate": "2026-04-12",
+          "note": ""
+        },
+        {
+          "productId": "1775536593139wj4l",
+          "qty": 150,
+          "deliveryDate": "2026-04-12",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "1775701806824h6nq",
+      "date": "2026-04-08",
+      "supplierId": "1775528870380h9ew",
+      "note": "",
+      "createdAt": "2026-04-09T02:30:06.824Z",
+      "items": [
+        {
+          "productId": "1775613555958h2rq",
+          "qty": 150,
+          "deliveryDate": "2026-04-16",
+          "note": "不要提早送"
+        }
+      ]
+    },
+    {
+      "id": "1775813221171ua0r",
+      "date": "2026-04-15",
+      "supplierId": "1775533036711dqma",
+      "note": "",
+      "createdAt": "2026-04-10T09:27:01.171Z",
+      "items": [
+        {
+          "productId": "17755367249893vg3",
+          "qty": 50,
+          "deliveryDate": "2026-04-15",
+          "note": "中样"
+        }
+      ]
+    }
+  ],
+  "receipts": [
+    {
+      "id": "1775616727411avkg",
+      "orderId": "1775614176799wulu",
+      "supplierId": "1775528870380h9ew",
+      "date": "2026-04-08",
+      "note": "",
+      "createdAt": "2026-04-08T02:52:07.411Z",
+      "items": [
+        {
+          "productId": "1775613275885azvk",
+          "qty": 120,
+          "orderedQty": 120
+        },
+        {
+          "productId": "1775556902179011c",
+          "qty": 1000,
+          "orderedQty": 1000
+        },
+        {
+          "productId": "1775557006958zuhy",
+          "qty": 300,
+          "orderedQty": 300
+        }
+      ],
+      "photosCount": 2
+    },
+    {
+      "id": "1775963850148xjgw",
+      "orderId": "1775701687965i3jf",
+      "supplierId": "1775533036711dqma",
+      "date": "2026-04-12",
+      "note": "",
+      "createdAt": "2026-04-12T03:17:30.148Z",
+      "items": [
+        {
+          "productId": "1775536548305lrmc",
+          "qty": 610,
+          "orderedQty": 600
+        },
+        {
+          "productId": "17755366241722ec8",
+          "qty": 294,
+          "orderedQty": 300
+        },
+        {
+          "productId": "17755366616063y4e",
+          "qty": 302,
+          "orderedQty": 300
+        },
+        {
+          "productId": "1775536593139wj4l",
+          "qty": 164,
+          "orderedQty": 150
+        }
+      ],
+      "photosCount": 1
+    },
+    {
+      "id": "1775963889763chzk",
+      "orderId": "17756143402591q15",
+      "supplierId": "17755357905551v82",
+      "date": "2026-04-12",
+      "note": "",
+      "createdAt": "2026-04-12T03:18:09.763Z",
+      "items": [
+        {
+          "productId": "1775613868736nfpg",
+          "qty": 1450,
+          "orderedQty": 1500
+        }
+      ],
+      "photosCount": 2
+    }
+  ]
+}
