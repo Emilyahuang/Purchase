@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wmix 采购共享页</title>
+  <style>
+    :root {
+      --bg: #f5f0e6;
+      --panel: rgba(255, 252, 246, 0.92);
+      --line: rgba(191, 175, 146, 0.45);
+      --text: #2d2c28;
+      --muted: #70675a;
+      --brand: #274135;
+      --accent: #b8893f;
+      --ok: #487451;
+      --tag-product: #f7e7c4;
+      --tag-material: #dce9f8;
+      --shadow: 0 16px 34px rgba(84, 66, 33, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(184, 137, 63, 0.12), transparent 28%),
+        linear-gradient(180deg, #f4efe5 0%, #faf8f2 100%);
+    }
+    a { color: inherit; }
+    .page {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 28px 22px 40px;
+    }
+    .hero, .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+    .hero {
+      padding: 24px 26px;
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: flex-start;
+    }
+    .hero-kicker {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #8c7755;
+      margin-bottom: 12px;
+    }
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 38px;
+      line-height: 1.1;
+    }
+    .hero-copy {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--muted);
+      max-width: 760px;
+    }
+    .hero-meta {
+      min-width: 280px;
+      display: grid;
+      gap: 10px;
+    }
+    .hero-badge, .hero-link {
+      border-radius: 999px;
+      border: 1px solid rgba(184, 137, 63, 0.45);
+      padding: 10px 14px;
+      font-size: 13px;
+      background: rgba(255, 250, 241, 0.95);
+      color: #6d562f;
+      text-decoration: none;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .hero-link {
+      background: linear-gradient(135deg, #274135 0%, #355849 100%);
+      color: #f6f1e6;
+      border-color: rgba(39, 65, 53, 0.8);
+      font-weight: 600;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .stat {
+      padding: 18px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+    .stat-label {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #8f7a59;
+      margin-bottom: 10px;
+    }
+    .stat-value {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(340px, 0.9fr);
+      gap: 18px;
+    }
+    .stack {
+      display: grid;
+      gap: 18px;
+    }
+    .panel {
+      padding: 20px 22px;
+    }
+    .panel-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: baseline;
+      margin-bottom: 14px;
+    }
+    .panel-title {
+      margin: 0;
+      font-size: 19px;
+    }
+    .panel-note {
+      font-size: 12px;
+      color: #8f7a59;
+    }
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) 220px;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .toolbar input,
+    .toolbar select {
+      width: 100%;
+      border: 1px solid #d8cfbf;
+      border-radius: 14px;
+      background: #fffdfa;
+      color: var(--text);
+      font: inherit;
+      padding: 11px 14px;
+    }
+    .table-wrap {
+      overflow: auto;
+      border-radius: 18px;
+      border: 1px solid rgba(214, 204, 184, 0.82);
+      background: rgba(255, 255, 255, 0.84);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 620px;
+    }
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid rgba(226, 219, 206, 0.92);
+      text-align: left;
+      font-size: 13px;
+      vertical-align: top;
+    }
+    th {
+      background: #f7f0e2;
+      color: #6e6458;
+      font-weight: 600;
+    }
+    .empty {
+      padding: 28px 18px;
+      text-align: center;
+      color: #9a9081;
+      border: 1px dashed rgba(197, 184, 162, 0.8);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.5);
+    }
+    .supplier-list,
+    .record-list {
+      display: grid;
+      gap: 10px;
+    }
+    .supplier-item,
+    .record-item {
+      border-radius: 18px;
+      border: 1px solid rgba(214, 204, 184, 0.8);
+      background: rgba(255, 255, 255, 0.86);
+      padding: 14px 16px;
+    }
+    .supplier-head,
+    .record-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+      margin-bottom: 6px;
+    }
+    .supplier-name,
+    .record-title {
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .supplier-meta,
+    .record-meta {
+      font-size: 12px;
+      color: #8d8478;
+    }
+    .supplier-copy,
+    .record-copy {
+      font-size: 13px;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .tag-product {
+      background: var(--tag-product);
+      color: #88510c;
+    }
+    .tag-material {
+      background: var(--tag-material);
+      color: #1d578d;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+      background: rgba(245, 238, 226, 0.92);
+      color: #7b6850;
+      margin-right: 8px;
+      margin-top: 6px;
+    }
+    .footer-note {
+      margin-top: 18px;
+      font-size: 12px;
+      color: #8e8374;
+      text-align: center;
+    }
+
+    @media (max-width: 1080px) {
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .layout { grid-template-columns: 1fr; }
+      .hero { flex-direction: column; }
+      .hero-meta { min-width: 0; width: 100%; }
+    }
+
+    @media (max-width: 680px) {
+      .page { padding: 18px 14px 28px; }
+      .hero h1 { font-size: 30px; }
+      .stats { grid-template-columns: 1fr; }
+      .toolbar { grid-template-columns: 1fr; }
+      .panel { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <div>
+        <div class="hero-kicker">Wmix Shared Workspace</div>
+        <h1>采购共享页</h1>
+        <p class="hero-copy">这个页面只展示无价格业务数据，方便同事查看供应商、商品、订货和收货进度。不包含单价、成本项或内部价格历史。</p>
+      </div>
+      <div class="hero-meta">
+        <div id="updated-at" class="hero-badge">正在读取数据...</div>
+        <a class="hero-link" href="./shared-data/wmix-shared-latest.json" target="_blank" rel="noreferrer">下载最新共享 JSON</a>
+      </div>
+    </section>
+
+    <section class="stats" id="summary-stats"></section>
+
+    <section class="layout">
+      <div class="stack">
+        <section class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">商品清单</h2>
+            <div class="panel-note">按供应商快速筛选</div>
+          </div>
+          <div class="toolbar">
+            <input id="product-search" type="text" placeholder="搜索商品编号或名称">
+            <select id="supplier-filter">
+              <option value="">全部供应商</option>
+            </select>
+          </div>
+          <div id="products-wrap"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">最近订货单</h2>
+            <div class="panel-note">最近 8 条</div>
+          </div>
+          <div id="orders-list"></div>
+        </section>
+      </div>
+
+      <div class="stack">
+        <section class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">供应商</h2>
+            <div class="panel-note">产品 / 耗材</div>
+          </div>
+          <div id="suppliers-list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">最近收货单</h2>
+            <div class="panel-note">最近 8 条</div>
+          </div>
+          <div id="receipts-list"></div>
+        </section>
+      </div>
+    </section>
+
+    <div class="footer-note">Wmix 采购共享页只同步无价格数据，敏感价格信息仍保留在内部版本中。</div>
+  </div>
+
+  <script>
+    const DATA_URL = './shared-data/wmix-shared-latest.json';
+
+    let sharedData = null;
+
+    function escapeHtml(value) {
+      return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function fmtTime(value) {
+      if (!value) return '-';
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return value;
+      return date.toLocaleString('zh-CN', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+      });
+    }
+
+    function fmtDate(value) {
+      return value || '-';
+    }
+
+    function getSupplierById(id) {
+      return (sharedData.suppliers || []).find(item => item.id === id);
+    }
+
+    function getProductById(id) {
+      return (sharedData.products || []).find(item => item.id === id);
+    }
+
+    function renderSummary() {
+      const suppliers = sharedData.suppliers || [];
+      const products = sharedData.products || [];
+      const orders = sharedData.orders || [];
+      const receipts = sharedData.receipts || [];
+      const pendingUnits = orders.reduce((sum, order) => sum + (order.items || []).reduce((inner, item) => inner + (Number(item.qty) || 0), 0), 0);
+
+      document.getElementById('summary-stats').innerHTML = [
+        ['供应商', suppliers.length],
+        ['商品', products.length],
+        ['订货单', orders.length],
+        ['收货单', receipts.length],
+        ['累计订货量', Math.round(pendingUnits * 100) / 100],
+      ].map(([label, value]) => `
+        <div class="stat">
+          <div class="stat-label">${label}</div>
+          <div class="stat-value">${escapeHtml(value)}</div>
+        </div>
+      `).join('');
+
+      document.getElementById('updated-at').textContent = `最近同步：${fmtTime(sharedData.exportedAt)}`;
+    }
+
+    function renderSuppliers() {
+      const list = (sharedData.suppliers || []).slice().sort((a, b) => a.name.localeCompare(b.name, 'zh-CN'));
+      const el = document.getElementById('suppliers-list');
+      if (!list.length) {
+        el.innerHTML = '<div class="empty">暂无供应商数据</div>';
+        return;
+      }
+      el.innerHTML = `<div class="supplier-list">${list.map(item => `
+        <div class="supplier-item">
+          <div class="supplier-head">
+            <div class="supplier-name">${escapeHtml(item.name)}</div>
+            <span class="tag ${item.type === 'material' ? 'tag-material' : 'tag-product'}">${item.type === 'material' ? '耗材' : '产品'}</span>
+          </div>
+          <div class="supplier-copy">
+            ${item.contact ? `<div>联系人：${escapeHtml(item.contact)}</div>` : ''}
+            ${item.phone ? `<div>电话：${escapeHtml(item.phone)}</div>` : ''}
+            ${!item.contact && !item.phone ? '<div>暂无补充联系信息</div>' : ''}
+          </div>
+        </div>
+      `).join('')}</div>`;
+    }
+
+    function renderSupplierFilter() {
+      const select = document.getElementById('supplier-filter');
+      select.innerHTML = '<option value="">全部供应商</option>' + (sharedData.suppliers || [])
+        .slice()
+        .sort((a, b) => a.name.localeCompare(b.name, 'zh-CN'))
+        .map(item => `<option value="${item.id}">${escapeHtml(item.name)}</option>`)
+        .join('');
+    }
+
+    function renderProducts() {
+      const search = document.getElementById('product-search').value.trim().toLowerCase();
+      const supplierId = document.getElementById('supplier-filter').value;
+
+      let list = (sharedData.products || []).slice();
+      if (search) {
+        list = list.filter(item => (item.code || '').toLowerCase().includes(search) || (item.name || '').toLowerCase().includes(search));
+      }
+      if (supplierId) {
+        list = list.filter(item => item.supplierId === supplierId);
+      }
+      list.sort((a, b) => (a.code || '').localeCompare(b.code || '', 'zh-CN'));
+
+      const el = document.getElementById('products-wrap');
+      if (!list.length) {
+        el.innerHTML = '<div class="empty">当前筛选下没有商品</div>';
+        return;
+      }
+
+      el.innerHTML = `
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>编号</th>
+                <th>商品</th>
+                <th>规格</th>
+                <th>供应商</th>
+                <th>单位</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${list.map(item => {
+                const supplier = getSupplierById(item.supplierId);
+                return `
+                  <tr>
+                    <td>${escapeHtml(item.code)}</td>
+                    <td>${escapeHtml(item.name)}</td>
+                    <td>${escapeHtml(item.spec || '-')}</td>
+                    <td>${escapeHtml(supplier ? supplier.name : '-')}</td>
+                    <td>${escapeHtml(item.unit || '-')}</td>
+                  </tr>
+                `;
+              }).join('')}
+            </tbody>
+          </table>
+        </div>
+      `;
+    }
+
+    function renderOrders() {
+      const list = (sharedData.orders || [])
+        .slice()
+        .sort((a, b) => String(b.createdAt || b.date).localeCompare(String(a.createdAt || a.date)))
+        .slice(0, 8);
+
+      const el = document.getElementById('orders-list');
+      if (!list.length) {
+        el.innerHTML = '<div class="empty">暂无订货记录</div>';
+        return;
+      }
+
+      el.innerHTML = `<div class="record-list">${list.map(order => {
+        const supplier = getSupplierById(order.supplierId);
+        const chips = (order.items || []).slice(0, 4).map(item => {
+          const product = getProductById(item.productId);
+          const name = product ? `${product.code} ${product.name}` : item.productId;
+          return `<span class="pill">${escapeHtml(name)} × ${escapeHtml(item.qty)}</span>`;
+        }).join('');
+        const more = (order.items || []).length > 4 ? `<span class="pill">另有 ${(order.items || []).length - 4} 项</span>` : '';
+        return `
+          <div class="record-item">
+            <div class="record-head">
+              <div class="record-title">${escapeHtml(supplier ? supplier.name : '-')}</div>
+              <div class="record-meta">${fmtDate(order.date)}</div>
+            </div>
+            <div class="record-copy">
+              <div>共 ${(order.items || []).length} 项商品${order.note ? `，备注：${escapeHtml(order.note)}` : ''}</div>
+              <div>${chips}${more}</div>
+            </div>
+          </div>
+        `;
+      }).join('')}</div>`;
+    }
+
+    function renderReceipts() {
+      const list = (sharedData.receipts || [])
+        .slice()
+        .sort((a, b) => String(b.createdAt || b.date).localeCompare(String(a.createdAt || a.date)))
+        .slice(0, 8);
+
+      const el = document.getElementById('receipts-list');
+      if (!list.length) {
+        el.innerHTML = '<div class="empty">暂无收货记录</div>';
+        return;
+      }
+
+      el.innerHTML = `<div class="record-list">${list.map(receipt => {
+        const supplier = getSupplierById(receipt.supplierId);
+        const chips = (receipt.items || []).slice(0, 4).map(item => {
+          const product = getProductById(item.productId);
+          const name = product ? `${product.code} ${product.name}` : item.productId;
+          return `<span class="pill">${escapeHtml(name)} × ${escapeHtml(item.qty)}</span>`;
+        }).join('');
+        const more = (receipt.items || []).length > 4 ? `<span class="pill">另有 ${(receipt.items || []).length - 4} 项</span>` : '';
+        return `
+          <div class="record-item">
+            <div class="record-head">
+              <div class="record-title">${escapeHtml(supplier ? supplier.name : '-')}</div>
+              <div class="record-meta">${fmtDate(receipt.date)}</div>
+            </div>
+            <div class="record-copy">
+              <div>共 ${(receipt.items || []).length} 项商品${receipt.photosCount ? `，附 ${receipt.photosCount} 张照片` : ''}${receipt.note ? `，备注：${escapeHtml(receipt.note)}` : ''}</div>
+              <div>${chips}${more}</div>
+            </div>
+          </div>
+        `;
+      }).join('')}</div>`;
+    }
+
+    function bindFilters() {
+      document.getElementById('product-search').addEventListener('input', renderProducts);
+      document.getElementById('supplier-filter').addEventListener('change', renderProducts);
+    }
+
+    async function init() {
+      try {
+        const response = await fetch(`${DATA_URL}?t=${Date.now()}`, { cache: 'no-store' });
+        if (!response.ok) {
+          throw new Error(`读取共享数据失败（${response.status}）`);
+        }
+        sharedData = await response.json();
+        renderSummary();
+        renderSupplierFilter();
+        renderSuppliers();
+        renderProducts();
+        renderOrders();
+        renderReceipts();
+        bindFilters();
+      } catch (error) {
+        document.getElementById('updated-at').textContent = '共享数据读取失败';
+        document.getElementById('summary-stats').innerHTML = `<div class="empty">${escapeHtml(error.message)}</div>`;
+        document.getElementById('suppliers-list').innerHTML = '<div class="empty">请稍后刷新页面重试</div>';
+        document.getElementById('products-wrap').innerHTML = '<div class="empty">请稍后刷新页面重试</div>';
+        document.getElementById('orders-list').innerHTML = '<div class="empty">请稍后刷新页面重试</div>';
+        document.getElementById('receipts-list').innerHTML = '<div class="empty">请稍后刷新页面重试</div>';
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
