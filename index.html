@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wmix采购共享页</title>
+  <meta http-equiv="refresh" content="0; url=./shared-view.html">
+  <style>
+    :root { color-scheme: light; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'PingFang SC', sans-serif;
+      background: #f7f1e3;
+      color: #254738;
+    }
+    .card {
+      width: min(560px, calc(100vw - 48px));
+      background: rgba(255,255,255,0.92);
+      border: 1px solid rgba(80, 60, 30, 0.12);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 24px 60px rgba(37, 71, 56, 0.10);
+    }
+    h1 { margin: 0 0 12px; font-size: 32px; }
+    p { margin: 0 0 12px; font-size: 18px; line-height: 1.7; color: #5c625b; }
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 12px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      background: #254738;
+      color: #fffaf2;
+      font-weight: 700;
+    }
+  </style>
+  <script>
+    window.location.replace('./shared-view.html');
+  </script>
+</head>
+<body>
+  <main class="card">
+    <h1>Wmix采购共享页</h1>
+    <p>正在打开共享入口页。如果没有自动跳转，请点击下面的按钮。</p>
+    <a href="./shared-view.html">打开共享页</a>
+  </main>
+</body>
+</html>
