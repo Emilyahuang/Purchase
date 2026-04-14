@@ -29,7 +29,8 @@
 
 更友好的共享入口：
 
-- 页面版：`https://cdn.jsdelivr.net/gh/Emilyahuang/Purchase@main/shared-view.html`
+- 页面版（推荐）：`https://rawcdn.githack.com/Emilyahuang/Purchase/main/index.html`
+- 页面版：`https://rawcdn.githack.com/Emilyahuang/Purchase/main/shared-view.html`
 - 原始 JSON：`https://raw.githubusercontent.com/Emilyahuang/Purchase/main/shared-data/wmix-shared-latest.json`
 
 如果以后需要价格权限，请单独使用私有仓库或私有文件分发，不要放进这个公开仓库。
