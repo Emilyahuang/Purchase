@@ -1,6 +1,6 @@
 {
   "format": "wmix_shared_bundle_v1",
-  "exportedAt": "2026-04-13T09:43:51.760Z",
+  "exportedAt": "2026-04-17T00:26:05.111Z",
   "suppliers": [
     {
       "id": "1775528870380h9ew",
@@ -28,7 +28,63 @@
       "name": "东莞市寮步顺兴纸品印刷厂（普通合伙）",
       "type": "material",
       "contact": "Steven",
+      "phone": "纸品"
+    },
+    {
+      "id": "1776316053873ooge",
+      "name": "吉鑫饮生物科技（上海）有限公司",
+      "type": "material",
+      "contact": "",
+      "phone": "巴斯克铁盒"
+    },
+    {
+      "id": "1776316076371mbx6",
+      "name": "宁波盒慕包装科技有限公司",
+      "type": "material",
+      "contact": "",
+      "phone": "铁盒"
+    },
+    {
+      "id": "1776316109072fehp",
+      "name": "温州亨运包装有限公司",
+      "type": "material",
+      "contact": "",
+      "phone": "纸品（平面价格好）"
+    },
+    {
+      "id": "17763161394389whs",
+      "name": "苏州市博丽塑料彩印包装有限公司",
+      "type": "material",
+      "contact": "",
+      "phone": "卷膜"
+    },
+    {
+      "id": "1776316483871q284",
+      "name": "甜艺（上海）国际贸易有限公司",
+      "type": "raw",
+      "contact": "",
+      "phone": "香草籽膏"
+    },
+    {
+      "id": "1776316493387qf7v",
+      "name": "苏州纽航云仓仓储有限公司",
+      "type": "logistics",
+      "contact": "",
       "phone": ""
+    },
+    {
+      "id": "1776316642886fct6",
+      "name": "上海佑滋食品有限公司",
+      "type": "product",
+      "contact": "",
+      "phone": ""
+    },
+    {
+      "id": "1776316844722t31z",
+      "name": "惠州市骏镁制罐有限公司",
+      "type": "material",
+      "contact": "周先生",
+      "phone": "铁盒"
     }
   ],
   "products": [
@@ -67,7 +123,7 @@
     {
       "id": "17755367249893vg3",
       "code": "0000006",
-      "name": "WMIX无蔗糖香草巴斯克",
+      "name": "WMIX香草酸奶巴斯克（代糖版）",
       "spec": "盒",
       "supplierId": "1775533036711dqma",
       "unit": "个"
@@ -266,6 +322,114 @@
           "note": "中样"
         }
       ]
+    },
+    {
+      "id": "17760746982090fe5",
+      "date": "2026-04-13",
+      "supplierId": "1775528870380h9ew",
+      "note": "",
+      "createdAt": "2026-04-13T10:04:58.210Z",
+      "items": [
+        {
+          "productId": "1775556902179011c",
+          "qty": 1000,
+          "deliveryDate": "2026-04-20",
+          "note": ""
+        },
+        {
+          "productId": "1775557116257919y",
+          "qty": 180,
+          "deliveryDate": "2026-04-20",
+          "note": ""
+        },
+        {
+          "productId": "17756133867238jky",
+          "qty": 200,
+          "deliveryDate": "2026-04-20",
+          "note": ""
+        },
+        {
+          "productId": "1775613726385bek6",
+          "qty": 150,
+          "deliveryDate": "2026-04-20",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "1776134398076oxkl",
+      "date": "2026-04-24",
+      "supplierId": "17755357905551v82",
+      "note": "务必不要延期发货，24号到仓",
+      "createdAt": "2026-04-14T02:39:58.078Z",
+      "items": [
+        {
+          "productId": "1775613868736nfpg",
+          "qty": 5000,
+          "deliveryDate": "2026-04-24",
+          "note": ""
+        },
+        {
+          "productId": "1775613958142ycrn",
+          "qty": 2000,
+          "deliveryDate": "2026-04-24",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "1776313360217d7zc",
+      "date": "2026-04-15",
+      "supplierId": "1775533036711dqma",
+      "note": "代糖巴斯克4/17号报数量",
+      "createdAt": "2026-04-16T04:22:40.219Z",
+      "items": [
+        {
+          "productId": "1775536548305lrmc",
+          "qty": 800,
+          "deliveryDate": "2026-04-20",
+          "note": ""
+        },
+        {
+          "productId": "1775536593139wj4l",
+          "qty": 500,
+          "deliveryDate": "2026-04-20",
+          "note": ""
+        },
+        {
+          "productId": "17755366616063y4e",
+          "qty": 150,
+          "deliveryDate": "2026-04-20",
+          "note": ""
+        },
+        {
+          "productId": "17755366241722ec8",
+          "qty": 300,
+          "deliveryDate": "2026-04-20",
+          "note": ""
+        },
+        {
+          "productId": "17755367249893vg3",
+          "qty": 0,
+          "deliveryDate": "2026-04-20",
+          "note": "（看检测报告出炉时间后送）"
+        }
+      ]
+    },
+    {
+      "id": "1776313766501fhy3",
+      "date": "2026-04-15",
+      "supplierId": "1775528870380h9ew",
+      "note": "",
+      "createdAt": "2026-04-16T04:29:26.501Z",
+      "items": [
+        {
+          "productId": "1775613275885azvk",
+          "qty": 100,
+          "deliveryDate": "2026-04-22",
+          "note": "另外单片备货130片，后面指定日期发货"
+        }
+      ]
     }
   ],
   "receipts": [
@@ -341,6 +505,22 @@
         }
       ],
       "photosCount": 2
+    },
+    {
+      "id": "1776238408563l512",
+      "orderId": "1775813221171ua0r",
+      "supplierId": "1775533036711dqma",
+      "date": "2026-04-15",
+      "note": "",
+      "createdAt": "2026-04-15T07:33:28.563Z",
+      "items": [
+        {
+          "productId": "17755367249893vg3",
+          "qty": 49,
+          "orderedQty": 50
+        }
+      ],
+      "photosCount": 1
     }
   ]
 }
