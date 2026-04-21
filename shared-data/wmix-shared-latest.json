@@ -1,6 +1,6 @@
 {
   "format": "wmix_shared_bundle_v1",
-  "exportedAt": "2026-04-17T00:26:05.111Z",
+  "exportedAt": "2026-04-21T03:41:28.524Z",
   "suppliers": [
     {
       "id": "1775528870380h9ew",
@@ -85,6 +85,13 @@
       "type": "material",
       "contact": "周先生",
       "phone": "铁盒"
+    },
+    {
+      "id": "1776674507441efbg",
+      "name": "无锡市佑滋食品有限公司",
+      "type": "product",
+      "contact": "佳佳",
+      "phone": "Pizza"
     }
   ],
   "products": [
@@ -92,7 +99,7 @@
       "id": "1775536548305lrmc",
       "code": "0000001",
       "name": "WMIX x PROVA香草巴斯克",
-      "spec": "盒",
+      "spec": "450g",
       "supplierId": "1775533036711dqma",
       "unit": "个"
     },
@@ -100,7 +107,7 @@
       "id": "1775536593139wj4l",
       "code": "0000002",
       "name": "WMIX开心果香草双层巴斯克",
-      "spec": "盒",
+      "spec": "450g",
       "supplierId": "1775533036711dqma",
       "unit": "个"
     },
@@ -108,7 +115,7 @@
       "id": "17755366241722ec8",
       "code": "0000003",
       "name": "WMIX巧克力香草双层巴斯克",
-      "spec": "盒",
+      "spec": "450g",
       "supplierId": "1775533036711dqma",
       "unit": "个"
     },
@@ -116,7 +123,7 @@
       "id": "17755366616063y4e",
       "code": "0000005",
       "name": "WMIX抹茶香草双层巴斯克",
-      "spec": "盒",
+      "spec": "450g",
       "supplierId": "1775533036711dqma",
       "unit": "个"
     },
@@ -124,7 +131,7 @@
       "id": "17755367249893vg3",
       "code": "0000006",
       "name": "WMIX香草酸奶巴斯克（代糖版）",
-      "spec": "盒",
+      "spec": "450g",
       "supplierId": "1775533036711dqma",
       "unit": "个"
     },
@@ -430,6 +437,135 @@
           "note": "另外单片备货130片，后面指定日期发货"
         }
       ]
+    },
+    {
+      "id": "1776654047521a2v1",
+      "date": "2026-04-17",
+      "supplierId": "1775528870380h9ew",
+      "note": "",
+      "createdAt": "2026-04-20T03:00:47.522Z",
+      "items": [
+        {
+          "productId": "1775613726385bek6",
+          "qty": 150,
+          "deliveryDate": "2026-04-22",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "1776658059691jx9q",
+      "date": "2026-04-17",
+      "supplierId": "1775533036711dqma",
+      "note": "测试新流程，全部面糊一起均质，交期弹性",
+      "createdAt": "2026-04-20T04:07:39.693Z",
+      "items": [
+        {
+          "productId": "1775536548305lrmc",
+          "qty": 50,
+          "deliveryDate": "2026-04-24",
+          "note": ""
+        },
+        {
+          "productId": "17755367249893vg3",
+          "qty": 50,
+          "deliveryDate": "2026-04-24",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "17766785531275otx",
+      "date": "2026-04-17",
+      "supplierId": "1775533036711dqma",
+      "note": "",
+      "createdAt": "2026-04-20T09:49:13.130Z",
+      "items": [
+        {
+          "productId": "17755366616063y4e",
+          "qty": 300,
+          "deliveryDate": "2026-04-24",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "1776737062832sr4g",
+      "date": "2026-04-17",
+      "supplierId": "17755357905551v82",
+      "note": "",
+      "createdAt": "2026-04-21T02:04:22.832Z",
+      "items": [
+        {
+          "productId": "1775613868736nfpg",
+          "qty": 5000,
+          "deliveryDate": "2026-04-28",
+          "note": ""
+        },
+        {
+          "productId": "1775613958142ycrn",
+          "qty": 2000,
+          "deliveryDate": "2026-04-28",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "1776740232677rre1",
+      "date": "2026-04-17",
+      "supplierId": "1775533036711dqma",
+      "note": "",
+      "createdAt": "2026-04-21T02:57:12.677Z",
+      "items": [
+        {
+          "productId": "1775536548305lrmc",
+          "qty": 1000,
+          "deliveryDate": "2026-04-24",
+          "note": ""
+        },
+        {
+          "productId": "1775536593139wj4l",
+          "qty": 500,
+          "deliveryDate": "2026-04-24",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "17767403659277gya",
+      "date": "2026-04-17",
+      "supplierId": "1775528870380h9ew",
+      "note": "",
+      "createdAt": "2026-04-21T02:59:25.927Z",
+      "items": [
+        {
+          "productId": "17756130568622a3x",
+          "qty": 100,
+          "deliveryDate": "2026-04-28",
+          "note": ""
+        },
+        {
+          "productId": "1775613555958h2rq",
+          "qty": 150,
+          "deliveryDate": "2026-04-28",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "1776740896182d5cj",
+      "date": "2026-04-21",
+      "supplierId": "1775528870380h9ew",
+      "note": "",
+      "createdAt": "2026-04-21T03:08:16.182Z",
+      "items": [
+        {
+          "productId": "1775556902179011c",
+          "qty": 1000,
+          "deliveryDate": "2026-04-28",
+          "note": ""
+        }
+      ]
     }
   ],
   "receipts": [
@@ -518,6 +654,89 @@
           "productId": "17755367249893vg3",
           "qty": 49,
           "orderedQty": 50
+        }
+      ],
+      "photosCount": 1
+    },
+    {
+      "id": "1776588114566j4d0",
+      "orderId": "17760746982090fe5",
+      "supplierId": "1775528870380h9ew",
+      "date": "2026-04-19",
+      "note": "",
+      "createdAt": "2026-04-19T08:41:54.566Z",
+      "items": [
+        {
+          "productId": "1775556902179011c",
+          "qty": 1000,
+          "orderedQty": 1000
+        },
+        {
+          "productId": "1775557116257919y",
+          "qty": 180,
+          "orderedQty": 180
+        },
+        {
+          "productId": "17756133867238jky",
+          "qty": 209,
+          "orderedQty": 200
+        },
+        {
+          "productId": "1775613726385bek6",
+          "qty": 185,
+          "orderedQty": 150
+        }
+      ],
+      "photosCount": 1
+    },
+    {
+      "id": "1776588137132muvz",
+      "orderId": "1775701806824h6nq",
+      "supplierId": "1775528870380h9ew",
+      "date": "2026-04-19",
+      "note": "",
+      "createdAt": "2026-04-19T08:42:17.132Z",
+      "items": [
+        {
+          "productId": "1775613555958h2rq",
+          "qty": 145,
+          "orderedQty": 150
+        }
+      ],
+      "photosCount": 1
+    },
+    {
+      "id": "1776665670347gltr",
+      "orderId": "1776313360217d7zc",
+      "supplierId": "1775533036711dqma",
+      "date": "2026-04-20",
+      "note": "",
+      "createdAt": "2026-04-20T06:14:30.347Z",
+      "items": [
+        {
+          "productId": "1775536548305lrmc",
+          "qty": 786,
+          "orderedQty": 800
+        },
+        {
+          "productId": "1775536593139wj4l",
+          "qty": 512,
+          "orderedQty": 500
+        },
+        {
+          "productId": "17755366616063y4e",
+          "qty": 154,
+          "orderedQty": 150
+        },
+        {
+          "productId": "17755366241722ec8",
+          "qty": 295,
+          "orderedQty": 300
+        },
+        {
+          "productId": "17755367249893vg3",
+          "qty": 47,
+          "orderedQty": 0
         }
       ],
       "photosCount": 1
