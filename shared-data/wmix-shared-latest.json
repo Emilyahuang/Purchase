@@ -1,6 +1,6 @@
 {
   "format": "wmix_shared_bundle_v1",
-  "exportedAt": "2026-04-27T07:49:23.367Z",
+  "exportedAt": "2026-04-27T09:18:26.759Z",
   "suppliers": [
     {
       "id": "1775528870380h9ew",
@@ -576,7 +576,7 @@
       "items": [
         {
           "productId": "1775556902179011c",
-          "qty": 2000,
+          "qty": 1000,
           "deliveryDate": "2026-04-25",
           "note": "可分批交货"
         }
