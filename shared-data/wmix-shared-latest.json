@@ -1,6 +1,6 @@
 {
   "format": "wmix_shared_bundle_v1",
-  "exportedAt": "2026-04-21T03:41:28.524Z",
+  "exportedAt": "2026-04-27T06:22:12.895Z",
   "suppliers": [
     {
       "id": "1775528870380h9ew",
@@ -566,6 +566,108 @@
           "note": ""
         }
       ]
+    },
+    {
+      "id": "1776831152444oqjh",
+      "date": "2026-04-22",
+      "supplierId": "1775528870380h9ew",
+      "note": "",
+      "createdAt": "2026-04-22T04:12:32.445Z",
+      "items": [
+        {
+          "productId": "1775556902179011c",
+          "qty": 2000,
+          "deliveryDate": "2026-04-25",
+          "note": "可分批交货"
+        }
+      ]
+    },
+    {
+      "id": "1776832150537kk5j",
+      "date": "2026-04-22",
+      "supplierId": "1775528870380h9ew",
+      "note": "",
+      "createdAt": "2026-04-22T04:29:10.537Z",
+      "items": [
+        {
+          "productId": "1775557006958zuhy",
+          "qty": 300,
+          "deliveryDate": "2026-04-28",
+          "note": ""
+        },
+        {
+          "productId": "1775613173346cvm4",
+          "qty": 100,
+          "deliveryDate": "2026-04-28",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "1776912502299axur",
+      "date": "2026-04-28",
+      "supplierId": "1775528870380h9ew",
+      "note": "",
+      "createdAt": "2026-04-23T02:48:22.299Z",
+      "items": [
+        {
+          "productId": "1775557116257919y",
+          "qty": 100,
+          "deliveryDate": "2026-04-28",
+          "note": ""
+        },
+        {
+          "productId": "17756130568622a3x",
+          "qty": 200,
+          "deliveryDate": "2026-04-28",
+          "note": ""
+        },
+        {
+          "productId": "1775613173346cvm4",
+          "qty": 150,
+          "deliveryDate": "2026-04-28",
+          "note": ""
+        },
+        {
+          "productId": "17756133867238jky",
+          "qty": 200,
+          "deliveryDate": "2026-04-28",
+          "note": ""
+        },
+        {
+          "productId": "1775613555958h2rq",
+          "qty": 150,
+          "deliveryDate": "2026-04-28",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "1777004006087ep8m",
+      "date": "2026-04-24",
+      "supplierId": "1775533036711dqma",
+      "note": "",
+      "createdAt": "2026-04-24T04:13:26.088Z",
+      "items": [
+        {
+          "productId": "1775536548305lrmc",
+          "qty": 1000,
+          "deliveryDate": "2026-04-29",
+          "note": ""
+        },
+        {
+          "productId": "1775536593139wj4l",
+          "qty": 500,
+          "deliveryDate": "2026-04-29",
+          "note": ""
+        },
+        {
+          "productId": "17755366616063y4e",
+          "qty": 500,
+          "deliveryDate": "2026-04-29",
+          "note": ""
+        }
+      ]
     }
   ],
   "receipts": [
@@ -737,6 +839,149 @@
           "productId": "17755367249893vg3",
           "qty": 47,
           "orderedQty": 0
+        }
+      ],
+      "photosCount": 1
+    },
+    {
+      "id": "1776923319775p2k1",
+      "orderId": "1776313766501fhy3",
+      "supplierId": "1775528870380h9ew",
+      "date": "2026-04-22",
+      "note": "",
+      "createdAt": "2026-04-23T05:48:39.775Z",
+      "items": [
+        {
+          "productId": "1775613275885azvk",
+          "qty": 100,
+          "orderedQty": 100
+        }
+      ],
+      "photosCount": 1
+    },
+    {
+      "id": "17769233445854lfe",
+      "orderId": "1776654047521a2v1",
+      "supplierId": "1775528870380h9ew",
+      "date": "2026-04-22",
+      "note": "",
+      "createdAt": "2026-04-23T05:49:04.585Z",
+      "items": [
+        {
+          "productId": "1775613726385bek6",
+          "qty": 157,
+          "orderedQty": 150
+        }
+      ],
+      "photosCount": 1
+    },
+    {
+      "id": "1776925886948c6da",
+      "orderId": "1776737062832sr4g",
+      "supplierId": "17755357905551v82",
+      "date": "2026-04-22",
+      "note": "",
+      "createdAt": "2026-04-23T06:31:26.948Z",
+      "items": [
+        {
+          "productId": "1775613868736nfpg",
+          "qty": 5062,
+          "orderedQty": 5000
+        },
+        {
+          "productId": "1775613958142ycrn",
+          "qty": 2032,
+          "orderedQty": 2000
+        }
+      ],
+      "photosCount": 1
+    },
+    {
+      "id": "1777003601450dlqn",
+      "orderId": "1776740232677rre1",
+      "supplierId": "1775533036711dqma",
+      "date": "2026-04-24",
+      "note": "",
+      "createdAt": "2026-04-24T04:06:41.450Z",
+      "items": [
+        {
+          "productId": "1775536548305lrmc",
+          "qty": 834,
+          "orderedQty": 1000
+        },
+        {
+          "productId": "1775536593139wj4l",
+          "qty": 404,
+          "orderedQty": 500
+        }
+      ],
+      "photosCount": 1
+    },
+    {
+      "id": "1777003617867shmx",
+      "orderId": "17766785531275otx",
+      "supplierId": "1775533036711dqma",
+      "date": "2026-04-24",
+      "note": "",
+      "createdAt": "2026-04-24T04:06:57.867Z",
+      "items": [
+        {
+          "productId": "17755366616063y4e",
+          "qty": 303,
+          "orderedQty": 300
+        }
+      ],
+      "photosCount": 1
+    },
+    {
+      "id": "1777024455065sx5f",
+      "orderId": "17767403659277gya",
+      "supplierId": "1775528870380h9ew",
+      "date": "2026-04-24",
+      "note": "",
+      "createdAt": "2026-04-24T09:54:15.065Z",
+      "items": [
+        {
+          "productId": "17756130568622a3x",
+          "qty": 100,
+          "orderedQty": 100
+        },
+        {
+          "productId": "1775613555958h2rq",
+          "qty": 150,
+          "orderedQty": 150
+        }
+      ],
+      "photosCount": 1
+    },
+    {
+      "id": "1777024486160ovxr",
+      "orderId": "1776740896182d5cj",
+      "supplierId": "1775528870380h9ew",
+      "date": "2026-04-24",
+      "note": "",
+      "createdAt": "2026-04-24T09:54:46.161Z",
+      "items": [
+        {
+          "productId": "1775556902179011c",
+          "qty": 1300,
+          "orderedQty": 1000
+        }
+      ],
+      "photosCount": 1
+    },
+    {
+      "id": "177702454264356n0",
+      "orderId": "1776832150537kk5j",
+      "supplierId": "1775528870380h9ew",
+      "date": "2026-04-24",
+      "note": "",
+      "createdAt": "2026-04-24T09:55:42.643Z",
+      "items": [
+        {
+          "productId": "1775613173346cvm4",
+          "qty": 100,
+          "orderedQty": 100
         }
       ],
       "photosCount": 1
